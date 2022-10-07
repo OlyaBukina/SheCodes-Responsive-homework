@@ -1,0 +1,163 @@
+:root {
+    --accent-color: #f2385a;
+    --primary-color: rgb(39, 33, 66);
+    --secondary-color: #b2ecfc;
+    --box-shadow: 10px 10px 20px rgba(39, 33, 66, 0.5);
+    --gradient: linear-gradient(179.1deg,
+            rgb(247, 238, 238) -1.9%,
+            rgb(247, 202, 201) 44.9%,
+            rgb(145, 168, 208) 96.1%);
+}
+
+body {
+    background: var(--gradient) 0 0 no-repeat local;
+    font-family: "M PLUS Rounded 1c", sans-serif;
+}
+
+h1,
+h2,
+h3 {
+    margin: 0;
+}
+main {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.main-content {
+    text-align: center;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+h1 {
+    font-size: 64px;
+    margin-top: 25px;
+}
+
+h2 {
+    font-size: 36px;
+    margin-top: 5px;
+}
+
+h3 {
+    font-size: 24px;
+    opacity: 0.7;
+    margin-top: 5px;
+}
+
+@media (max-width: 500px) {
+    main {
+        margin: 0 15px;
+    }
+    h1 {
+        font-size: 32px;
+    }
+    h2 {
+        font-size: 24px;
+    }
+    h3 {
+        font-size: 18px;
+    }
+    p {
+    font-size: 12px;
+    }
+    .buttons a,
+    .projects .link{
+        font-size: 12px;
+        font-weight: 700;
+    }
+    .info {
+        text-align: center;
+    }
+    .mail {
+        font-size: 14px;
+    }
+    .yoga,
+    .weather,
+    .yogurt {
+        border: 2px solid rgba(39, 33, 66, 0.3);
+        border-radius: 10px;
+        padding: 10px;
+    }
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    margin: 25px 0;
+}
+
+.link {
+    
+    font-size: 18px;
+    border: 2px solid var(--accent-color);
+    border-radius: 15px;
+    padding: 15px 20px;
+    /* margin: 0 30px; */
+    text-decoration: none;
+}
+
+.link:hover {
+    color: var(--primary-color);
+}
+
+.contact {
+    background: var(--accent-color);
+    color: #ffffff;
+}
+
+.about {
+    background: #fff;
+    color: var(--accent-color);
+}
+
+.content {
+    text-align: center;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.info-about-me {
+    margin: 20px;
+    /* display: flex; */
+}
+
+.info-text {
+    background: var(--secondary-color);
+    margin: 0 20px;
+    padding: 0 15px;
+    border-radius: 15px;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.contact-info {
+    /* background: var(--secondary-color); */
+    /* border-radius: 15px; */
+    padding: 15px;
+    margin: 0 auto;
+}
+
+.mail {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+.mail:hover {
+    color: var(--accent-color);
+}
+
+.contact-title {
+    margin-bottom: 15px;
+}
+
+.nav-link:hover {
+    color: var(--accent-color);
+}
+
+.navbar-brand:hover {
+    color: var(--accent-color);
+}
